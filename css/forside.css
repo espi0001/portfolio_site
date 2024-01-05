@@ -10,6 +10,12 @@ main {
   line-height: 0.8;
 }
 
+article {
+  text-align: center;
+  line-height: 1;
+  margin-top: 5%;
+}
+
 h1 {
   font-family: "abril_fat_face", sans-serif;
   color: var(--tredje-color);
@@ -100,11 +106,6 @@ h1 {
 }
 
 @media screen and (min-width: 800px) {
-  article {
-    text-align: center;
-    line-height: 1;
-  }
-
   h1 {
     font-size: 11rem;
   }

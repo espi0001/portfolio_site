@@ -45,35 +45,17 @@ footer {
 .footer_navn p {
   background-color: var(--secondary-color);
   color: var(--femte-color);
+  max-width: none;
 }
 
 .footer_iconer {
   display: inline-flex;
-  width: 10%;
   color: var(--femte-color);
+  gap: 14%;
+  margin-top: 2%;
 }
+
 /************ FONTE START ************/
-
-@font-face {
-  font-family: "abril_regular";
-  src: url("fonts/abril_display_regular-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "abril_semi_bold";
-  src: url("fonts/abril_display_semibold-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "abril_bold";
-  src: url("fonts/abril_display_bold-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 @font-face {
   font-family: "abril_extra_bold";
   src: url("fonts/abril_display_extrabold-webfont.woff2") format("woff2");
@@ -83,32 +65,6 @@ footer {
 @font-face {
   font-family: "abril_fat_face";
   src: url("fonts/abril_fatface-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "abril_black";
-  src: url("fonts/abril_display_black-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "josefin_light";
-  src: url("fonts/josefinsans-light-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "josefin_thin";
-  src: url("fonts/josefinsans-thin-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "josefin_sansregular";
-  src: url("fonts/josefinsans-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
