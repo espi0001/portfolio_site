@@ -1,0 +1,803 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* VARIABLER */
+html {
+  --primary-color: black; /*tekst*/
+  --secondary-color: #f2ead6; /*body main*/
+  --tredje-color: #ffa101; /*H1 - organge*/
+  --fjerde-color: #b3dee5; /*lyseblå*/
+  --femte-color: #31525b; /*mørke blå/grøn*/
+  --sjette-color: #fae6b1; /*gul*/
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--secondary-color);
+  list-style: none;
+}
+
+main {
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--femte-color);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer_navn p {
+  background-color: var(--secondary-color);
+  color: var(--femte-color);
+}
+
+.footer_iconer {
+  display: inline-flex;
+  width: 10%;
+  color: var(--femte-color);
+}
+/************ FONTE START ************/
+
+@font-face {
+  font-family: "abril_regular";
+  src: url("fonts/abril_display_regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "abril_semi_bold";
+  src: url("fonts/abril_display_semibold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abril_bold";
+  src: url("fonts/abril_display_bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abril_extra_bold";
+  src: url("fonts/abril_display_extrabold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "abril_fat_face";
+  src: url("fonts/abril_fatface-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "abril_black";
+  src: url("fonts/abril_display_black-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "josefin_light";
+  src: url("fonts/josefinsans-light-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "josefin_thin";
+  src: url("fonts/josefinsans-thin-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "josefin_sansregular";
+  src: url("fonts/josefinsans-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "josefin_semi_bold";
+  src: url("fonts/josefinsans-semibold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "josefin_bold";
+  src: url("fonts/josefinsans-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/************ TEKST START ************/
+h1 {
+  font-family: "abril_extra_bold", sans-serif;
+  color: var(--tredje-color);
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  font-family: "josefin_semi_bold";
+  font-size: 1.9rem;
+  /* -webkit-text-stroke-width: 1px; Prefix required. Even Firefox only supports the -webkit- prefix */
+  /* -webkit-text-stroke-color: var(--femte-color);
+  color: transparent; */
+  color: var(--femte-color);
+  font-style: normal;
+}
+h2 span {
+  color: var(--femte-color);
+}
+
+h3 {
+  font-family: "josefin_bold", sans-serif;
+  color: var(--femte-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "josefin_bold", sans-serif;
+  color: var(--tredje-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+p {
+  font-family: "josefin_semi_bold", sans-serif;
+  color: black;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 65ch;
+  text-wrap: balance;
+}
+
+a {
+  font-family: "josefin_semi_bold", sans-serif;
+  font-size: 0.85rem;
+  max-width: 65ch;
+}
+
+a:hover {
+  color: var(--tredje-color);
+  transition: color 0.7s ease;
+}
+
+/************ INTRO TEKST START ************/
+section {
+  padding: 25px 20px;
+  max-width: 1400px;
+}
+
+.intro_tekst {
+  margin: 13px 0px;
+}
+.intro_tekst p {
+  font-size: 1.1rem;
+}
+
+/************ STI START ************/
+/* sti_ramme start -  fået hjælp af tutor, chatgpt, brugt i tema 3 kode og tema 5 kode*/
+.top_sti a:hover {
+  color: var(--senary);
+  transition: 0.7s ease;
+}
+
+.sti_ramme {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ul.sti {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: var(--sjette-color);
+  flex-wrap: wrap;
+  color: var(--femte-color);
+  padding: 0px 1px;
+}
+
+ul.sti li {
+  margin-right: 5px;
+}
+
+ul.sti li:last-child {
+  margin-right: 0;
+}
+
+ul.sti li a {
+  color: var(--femte-color); /* Add a color to all links inside the list */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.7s ease; /* Giver en jævn farveændringseffekt ved hover */
+  letter-spacing: 0.01rem;
+}
+
+ul.sti li a:hover {
+  color: var(--tredje-color);
+  text-decoration: none;
+  transition: color 0.7s ease;
+}
+
+.prik {
+  color: var(--femte-color);
+  font-size: 1.5rem;
+  display: none;
+}
+
+/************ LINJE ************/
+.linje {
+  margin: 0px auto;
+  padding-inline: 10%;
+  margin-bottom: 20px;
+}
+
+/************ KNAP START ************/ /* Style the link as a button - fra chat gbt*/
+.knap {
+  display: inline-block;
+  padding: 15px 28px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--fjerde-color);
+  color: var(--femte-color);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  box-shadow: 0px 20px 43px -12px rgba(0, 0, 0, 35%);
+}
+
+.knap:hover {
+  background-color: var(--tredje-color);
+  color: var(--femte-color);
+  transition: 0.7s ease;
+}
+
+/************ BACK TO TOP START ************/
+.top {
+  margin: 20px 60px 20px 0px;
+}
+.top img {
+  width: 13%;
+  margin-left: auto;
+  transition: 1s ease;
+}
+
+.top img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+/************ VIDEN START ************/
+.gul_kasse {
+  background-color: var(--sjette-color);
+}
+
+.viden {
+  max-width: 1400px;
+  padding: 20px 30px;
+}
+
+.viden_overskrift {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.viden_tekst {
+  margin-top: 20px;
+}
+
+.tekst_billede {
+  display: block;
+}
+
+/************ FÆRDIGHEDER OG KOMPETENCER / UDFORDRINGER START ************/
+.kompetencer_udfordringer {
+  margin: 30px 40px 20px 40px;
+  max-width: 1400px;
+}
+
+.kompetencer_overskrift,
+.udfordringer_overskrift {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.kompetencer_tekst {
+  margin-bottom: 60px;
+}
+
+/************ OPGAVER START ************/
+.opgaver {
+  background-color: var(--sjette-color);
+  padding: 30px 0px;
+  max-width: 1400px;
+}
+.opgaver_overskrift_tekst {
+  text-align: center;
+  align-items: center;
+  p {
+    font-size: 1.05rem;
+  }
+}
+
+.kasse_1,
+.kasse_2,
+.kasse_3 {
+  background-color: var(--femte-color);
+  border-radius: 30px;
+  margin: 20px 20px;
+  padding: 20px 30px;
+  box-shadow: 0px 20px 43px -12px rgba(0, 0, 0, 35%);
+}
+
+.opg_1_overskrift,
+.opg_2_overskrift {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.opg_1_billede,
+.opg_2_billede {
+  align-self: center;
+  margin-bottom: 20px;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: filter 0.7s ease;
+}
+
+.opg_1_billede:hover,
+.opg_2_billede:hover {
+  filter: grayscale(0%) brightness(110%); /* Brug komma for at kombinere flere filtereffekter */
+  transition: filter 0.7s ease; /* Ændret transition til filter */
+}
+
+.kasse_1 p,
+.kasse_2 p,
+.kasse_3 p {
+  color: var(--secondary-color);
+}
+.opg_1_tekst,
+.opg_2_tekst {
+  margin-bottom: 20px;
+}
+
+.opg_1_knap,
+.opg_2_knap {
+  text-align: center;
+  align-self: center;
+}
+
+/************ OM MIG START ************/
+/* kontakt */
+.om_mig_grid {
+  h3 {
+    text-align: center;
+    margin-bottom: 3%;
+    letter-spacing: 0.13rem;
+  }
+  p {
+    line-height: 1;
+    margin-bottom: 5%;
+    font-size: 1.1rem;
+  }
+}
+.om_mig_overskrift_billede {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.gul_kasse_2 {
+  display: none;
+}
+
+/* KONTAKT */
+.kontakt {
+  background-color: var(--femte-color);
+  margin-inline: 20%;
+  margin-bottom: 5%;
+  padding: 6% 0%;
+  box-shadow: 0px 20px 43px -12px rgba(0, 0, 0, 35%);
+
+  h3 {
+    color: var(--secondary-color);
+  }
+  p {
+    color: var(--fjerde-color);
+  }
+  img {
+    width: 7%;
+  }
+}
+
+.oplysninger {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-bottom: 2%;
+  p {
+    margin-bottom: 0%;
+  }
+}
+
+/* UDDANNELSER */
+.uddannelse {
+  background-color: var(--sjette-color);
+  padding: 5% 10%;
+}
+
+.uddannelse_tekst {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  span {
+    font-size: 0.7rem;
+  }
+}
+
+/* ERFARING */
+.erfaring {
+  background-color: var(--femte-color);
+  color: var(--sjette-color);
+  padding: 5% 10%;
+  box-shadow: 0px 20px 43px -12px rgba(0, 0, 0, 35%);
+  h3 {
+    color: var(--tredje-color);
+  }
+  ul {
+    line-height: 2;
+  }
+  li {
+    color: var(--secondary-color);
+    font-family: "josefin_semi_bold", sans-serif;
+    font-size: 1.1rem;
+  }
+}
+
+/* FÆRDIGHEDER */
+.skills {
+  background-color: var(--sjette-color);
+  padding: 5%;
+}
+
+.programmer_kodning {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.programmer_iconer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  width: 47%;
+  padding-top: 4%;
+  gap: 10%;
+}
+
+/* SPROG */
+.sprog {
+  margin-inline: 10%;
+  padding: 5%;
+
+  span {
+    font-size: 0.7rem;
+  }
+}
+
+.sprog_tekst {
+  display: flex;
+  justify-content: space-between;
+}
+
+/************ DESKTOP VERSION ************/
+/************ DESKTOP VERSION ************/
+/************ DESKTOP VERSION ************/
+@media screen and (min-width: 800px) {
+  /************ TEKST START ************/
+  h1 {
+    font-size: 4.4rem;
+    letter-spacing: 0.3rem;
+  }
+  h2 {
+    font-size: 3.7rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  a {
+    font-size: 1rem;
+  }
+
+  /* KNAP */
+  .knap {
+    padding: 23px 60px;
+  }
+
+  /* TOP KNAP */
+
+  .top {
+    margin: 30px 60px 0px 0px;
+  }
+
+  .top img {
+    width: 4%;
+  }
+  /************ INTRO TEKST START ************/
+  section {
+    padding: 50px 50px 0 50px;
+  }
+
+  .intro_tekst {
+    margin: 30px 0px;
+    br {
+      margin-bottom: 2%;
+    }
+  }
+  .intro_tekst p {
+    font-size: 1.5rem;
+  }
+
+  /************ STI START ************/
+  ul.sti {
+    padding: 10px 16px;
+  }
+
+  ul.sti li {
+    margin-right: 10px;
+  }
+
+  ul.sti li a {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .prik {
+    font-size: 2rem;
+  }
+
+  /************ LINJE ************/
+  .linje {
+    margin: 30px auto;
+    margin-bottom: 0px;
+  }
+
+  /************ VIDEN START ************/
+  .gul_kasse {
+    margin-top: 40px;
+  }
+  .viden {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 50px;
+  }
+  .viden_overskrift {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+
+  .viden_billede {
+    grid-row: span 2;
+    margin: 0 auto;
+  }
+
+  .viden_tekst {
+    margin-right: 30px;
+    margin-top: 0px;
+  }
+
+  /************ FÆRDIGHEDER 0G KOMPETENCER / UDFORDRINGER START ************/
+  .kompetencer_udfordringer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 100px;
+    gap: 110px;
+  }
+
+  .kompetencer_overskrift,
+  .udfordringer_overskrift {
+    text-align: left;
+  }
+
+  /************ OPGAVER START ************/
+  .opgaver_overskrift_tekst p {
+    font-size: 1.34rem;
+  }
+
+  .kasse_1,
+  .kasse_2,
+  .kasse_3 {
+    display: grid;
+    margin: 40px 103px;
+    padding: 67px 58px;
+  }
+
+  .kasse_3 {
+    padding: 67px 57px;
+  }
+  .opg_1_overskrift,
+  .opg_2_overskrift,
+  .opg_1_billede,
+  .opg_2_billede,
+  .opg_1_tekst,
+  .opg_2_tekst {
+    margin-bottom: 0px;
+  }
+
+  .opg_1_overskrift {
+    grid-row: 1/2;
+    grid-column: 3/5;
+  }
+
+  .opg_1_billede {
+    grid-row: 1 / 4;
+    grid-column: 1/3;
+  }
+  .opg_1_tekst {
+    grid-row: 2/2;
+    grid-column: 3/5;
+    margin-left: 65px;
+    margin-top: 25px;
+    br {
+      margin-bottom: 2%;
+    }
+  }
+
+  .opg_1_knap {
+    grid-row: 3/3;
+    grid-column: 3/5;
+    margin-top: 25px;
+  }
+
+  .opg_2_overskrift {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  .opg_2_billede {
+    grid-row: 1 / 4;
+    grid-column: 3/5;
+  }
+  .opg_2_tekst {
+    grid-row: 2/2;
+    grid-column: 1/3;
+    margin-right: 65px;
+    margin-top: 25px;
+    br {
+      margin-bottom: 2%;
+    }
+  }
+  .opg_2_knap {
+    grid-row: 3/3;
+    grid-column: 1/3;
+    margin-top: 25px;
+  }
+
+  /************ OM MIG START ************/
+  .om_mig {
+    padding: 50px 0px 0px 50px;
+  }
+  .om_mig_grid {
+    h3 {
+      text-align: left;
+    }
+    p {
+      font-size: 1.35rem;
+    }
+  }
+
+  .om_mig_overskrift_billede {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    p {
+      font-size: 1.4rem;
+    }
+    img {
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+
+  /* minmax betyder 30% men max 700px det svarer til en max with på 1400px - auto gør at den gule kasse går ud til kanten i begge sider*/
+  .om_mig_grid {
+    display: grid;
+    grid-template-columns: auto minmax(30%, 700px) minmax(30%, 700px) auto;
+  }
+  .gul_kasse_2 {
+    background-color: var(--sjette-color);
+    display: block;
+    grid-column: 1/5;
+    grid-row: 2/6;
+  }
+
+  /* KONTAKT */
+  .kontakt {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin-inline: 20%;
+    margin-bottom: 0%;
+    padding: 3% 0%;
+    h3 {
+      text-align: center;
+    }
+  }
+
+  /* UDDANNELSER */
+  .uddannelse {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    margin-inline: 10%;
+    padding: 5%;
+    background-color: transparent;
+  }
+  .uddannelse_tekst {
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* ERFARING */
+  .erfaring {
+    grid-column: 2/3;
+    grid-row: 5/7;
+    margin-inline: 10%;
+    padding: 5%;
+    li {
+      font-size: 1.35rem;
+    }
+  }
+
+  /* FÆRDIGHEDER */
+  .skills {
+    grid-column: 3/4;
+    grid-row: 4/6;
+    margin-inline: 10%;
+    padding: 5%;
+    background-color: transparent;
+  }
+
+  .programmer_iconer {
+    width: 77%;
+  }
+
+  /* SPROG */
+  .sprog {
+    grid-column: 3/4;
+    grid-row: 6/7;
+
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
+  .sprog_tekst {
+    display: flex;
+    justify-content: space-between;
+  }
+}
