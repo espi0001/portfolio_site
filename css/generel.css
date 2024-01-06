@@ -143,9 +143,12 @@ section {
 
 .intro_tekst {
   margin: 3% 0%;
-}
-.intro_tekst p {
-  font-size: 1.1rem;
+  p {
+    font-size: 1.1rem;
+  }
+  br {
+    margin-bottom: 3%;
+  }
 }
 
 /************ STI START ************/
@@ -251,6 +254,9 @@ ul.sti li a:hover {
 .viden {
   max-width: 1400px;
   padding: 5% 4%;
+  br {
+    margin-bottom: 3%;
+  }
 }
 
 .viden_overskrift {
@@ -269,6 +275,9 @@ ul.sti li a:hover {
 .kompetencer_udfordringer {
   margin: 5% 4%;
   max-width: 1400px;
+  br {
+    margin-bottom: 3%;
+  }
 }
 
 .kompetencer_overskrift,
@@ -345,6 +354,9 @@ ul.sti li a:hover {
 /************ OM MIG START ************/
 .om_mig {
   margin: 5% 4%;
+  br {
+    margin-bottom: 3%;
+  }
 }
 .om_mig_grid {
   h3 {
@@ -425,7 +437,10 @@ ul.sti li a:hover {
   grid-template-columns: 1fr 1fr;
   p {
     color: var(--sjette-color);
-    line-height: 3;
+  }
+  span {
+    font-size: 0.7rem;
+    line-height: 2;
   }
 }
 
@@ -506,7 +521,7 @@ ul.sti li a:hover {
   .top img {
     width: 8%;
   }
-  /************ INTRO TEKST START ************/
+  /************ INTRO TEKST START TABLET ************/
   section {
     padding: 5% 5% 0 5%;
   }
@@ -521,7 +536,7 @@ ul.sti li a:hover {
     font-size: 1.2rem;
   }
 
-  /************ STI START ************/
+  /************ STI START TABLET ************/
 
   ul.sti li {
     margin-right: 10px;
@@ -536,12 +551,12 @@ ul.sti li a:hover {
     font-size: 2rem;
   }
 
-  /************ LINJE ************/
+  /************ LINJE TABLET ************/
   .linje {
     padding-inline: 9%;
     margin: 3% 4%;
   }
-  /************ VIDEN START ************/
+  /************ VIDEN START TABLET ************/
 
   .viden {
     display: grid;
@@ -562,14 +577,14 @@ ul.sti li a:hover {
     margin-top: 0px;
   }
 
-  /************ FÆRDIGHEDER 0G KOMPETENCER / UDFORDRINGER START ************/
+  /************ FÆRDIGHEDER 0G KOMPETENCER / UDFORDRINGER START TABLET************/
   .kompetencer_udfordringer {
     margin: 5% 5%;
   }
   .kompetencer_tekst {
     margin-bottom: 4%;
   }
-  /************ OPGAVER START ************/
+  /************ OPGAVER START TABLET ************/
   .opgaver {
     margin: 5% 5%;
     padding: 5% 0%;
@@ -639,7 +654,7 @@ ul.sti li a:hover {
     grid-column: 1/3;
   }
 
-  /************ OM MIG START ************/
+  /************ OM MIG START TABLET ************/
   .om_mig {
     margin: 5% 5%;
   }
@@ -671,7 +686,7 @@ ul.sti li a:hover {
     grid-row: 3/9;
   }
 
-  /* KONTAKT */
+  /* KONTAKT TABLET */
   .kontakt {
     grid-column: 3/5;
     grid-row: 1/3;
@@ -683,7 +698,7 @@ ul.sti li a:hover {
     }
   }
 
-  /* UDDANNELSER */
+  /* UDDANNELSER TABLET */
   .uddannelse {
     grid-column: 2/5;
     grid-row: 3/5;
@@ -697,19 +712,20 @@ ul.sti li a:hover {
     }
   }
 
-  /* ERFARING */
+  /* ERFARING TABLET */
   .erfaring {
     grid-column: 2/5;
     grid-row: 5/7;
     margin-inline: 11%;
     padding: 5%;
-    p {
-      font-size: 1.2rem;
-      line-height: 3;
+  }
+  .erfaring_tekst {
+    span {
+      font-size: 0.9rem;
     }
   }
 
-  /* FÆRDIGHEDER */
+  /* FÆRDIGHEDER TABLET */
   .skills {
     grid-column: 2/5;
     grid-row: 9/8;
@@ -729,7 +745,7 @@ ul.sti li a:hover {
     }
   }
 
-  /* SPROG */
+  /* SPROG TABLET */
   .sprog {
     grid-column: 2/5;
     grid-row: 9/9;
@@ -774,12 +790,12 @@ ul.sti li a:hover {
     font-size: 1rem;
   }
 
-  /* KNAP */
+  /* KNAP DESKTOP */
   .knap {
     padding: 23px 60px;
   }
 
-  /* TOP KNAP */
+  /* TOP KNAP DESKTOP */
 
   .top {
     margin: 30px 60px 0px 0px;
@@ -788,7 +804,7 @@ ul.sti li a:hover {
   .top img {
     width: 4%;
   }
-  /************ INTRO TEKST START ************/
+  /************ INTRO TEKST START DESKTOP ************/
   section {
     padding: 5% 7% 0 7%;
   }
@@ -797,20 +813,20 @@ ul.sti li a:hover {
     font-size: 1.5rem;
   }
 
-  /************ STI START ************/
+  /************ STI START DESKTOP ************/
 
   ul.sti li a {
     font-size: 1.5rem;
   }
 
-  /************ VIDEN START ************/
+  /************ VIDEN START DESKTOP ************/
 
   .viden {
     padding: 5% 7%;
     align-items: inherit;
   }
 
-  /************ FÆRDIGHEDER 0G KOMPETENCER / UDFORDRINGER START ************/
+  /************ FÆRDIGHEDER 0G KOMPETENCER / UDFORDRINGER START DESKTOP ************/
   .kompetencer_udfordringer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -818,7 +834,7 @@ ul.sti li a:hover {
     gap: 2%;
   }
 
-  /************ OPGAVER START ************/
+  /************ OPGAVER START DESKTOP ************/
   .opgaver {
     margin: 5% 7%;
   }
@@ -873,7 +889,7 @@ ul.sti li a:hover {
     grid-column: 1/3;
   }
 
-  /************ OM MIG START ************/
+  /************ OM MIG START DESKTOP ************/
   .om_mig {
     margin: 5% 7%;
   }
@@ -904,7 +920,7 @@ ul.sti li a:hover {
     grid-row: 2/6;
   }
 
-  /* KONTAKT */
+  /* KONTAKT DESKTOP */
   .kontakt {
     grid-column: 3/4;
     grid-row: 1/3;
@@ -912,29 +928,22 @@ ul.sti li a:hover {
     padding: 3% 0%;
   }
 
-  /* UDDANNELSER */
+  /* UDDANNELSER DESKTOP */
   .uddannelse {
     grid-column: 2/3;
     grid-row: 2/5;
     margin-inline: 11.5%;
   }
 
-  /* ERFARING */
+  /* ERFARING DESKTOP */
   .erfaring {
     grid-column: 2/3;
     grid-row: 5/7;
     margin-inline: 11.5%;
     padding: 5%;
-    ul {
-      line-height: 3;
-    }
-    p {
-      font-size: 1.35rem;
-      line-height: 3;
-    }
   }
 
-  /* FÆRDIGHEDER */
+  /* FÆRDIGHEDER DESKTOP */
   .skills {
     grid-column: 3/4;
     grid-row: 4/6;
@@ -950,7 +959,7 @@ ul.sti li a:hover {
       padding-top: 24%;
     }
   }
-  /* SPROG */
+  /* SPROG DESKTOP */
   .sprog {
     grid-column: 3/4;
     grid-row: 6/7;
