@@ -50,6 +50,7 @@
   color: var(--secondary-color);
   display: block;
   transition: 0.7s ease;
+  max-width: none;
 }
 
 .overlay a:hover,
