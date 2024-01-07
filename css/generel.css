@@ -832,6 +832,9 @@ ul.sti li a:hover {
     gap: 2%;
   }
 
+  .kompetencer {
+    margin-right: 4%;
+  }
   /************ OPGAVER START DESKTOP ************/
   .opgaver {
     margin: 5% 7%;
