@@ -9,7 +9,7 @@
   font-family: "josefin_semi_bold", sans-serif;
 }
 .logo img {
-  width: 80px;
+  width: 90px;
 }
 .head_menu a:hover,
 .menu_tema:hover {
@@ -112,7 +112,7 @@ footer {
   }
 
   .logo img {
-    width: 90px;
+    width: 100px;
   }
 }
 
@@ -123,6 +123,6 @@ footer {
   }
 
   .logo img {
-    width: 100px;
+    width: 110px;
   }
 }
