@@ -130,7 +130,7 @@ a {
 }
 
 a:hover {
-  color: var(--tredje-color);
+  color: var(--fjerde-color);
   transition: color 0.5s ease;
 }
 
@@ -152,7 +152,7 @@ section {
 /************ STI START ************/
 /* sti_ramme start -  fået hjælp af tutor, chatgpt, brugt i tema 3 kode og tema 5 kode*/
 .top_sti a:hover {
-  color: var(--senary);
+  color: var(--fjerde-color);
   transition: 0.5s ease;
 }
 
@@ -189,7 +189,7 @@ ul.sti li a {
 }
 
 ul.sti li a:hover {
-  color: var(--tredje-color);
+  color: var(--fjerde-color);
   text-decoration: none;
   transition: color 0.5s ease;
 }
@@ -201,8 +201,13 @@ ul.sti li a:hover {
 }
 
 /************ LINJE ************/
+.kassen_linje {
+  margin: 2% 0%;
+}
+
 .linje {
-  margin: 4% 4%;
+  /* margin: 4% 4%; */
+  max-width: 1400px;
 }
 
 /************ KNAP START ************/ /* Style the link as a button - fra chat gbt*/
@@ -381,6 +386,10 @@ ul.sti li a:hover {
     margin-bottom: 5%;
     font-size: 1.1rem;
   }
+  a {
+    font-size: 1.35rem;
+    line-height: 1;
+  }
 }
 .om_mig_overskrift_billede {
   margin: 0 auto;
@@ -394,7 +403,7 @@ ul.sti li a:hover {
 /* KONTAKT */
 .kontakt {
   background-color: var(--femte-color);
-  margin-inline: 20%;
+  margin-inline: 10%;
   margin-bottom: 5%;
   padding: 6% 0%;
   box-shadow: 0px 20px 43px -12px rgba(0, 0, 0, 35%);
@@ -408,11 +417,11 @@ ul.sti li a:hover {
     margin-bottom: 3%;
     letter-spacing: 0.13rem;
   }
-  p {
+  a {
     color: var(--fjerde-color);
   }
   img {
-    width: 55%;
+    width: 58%;
   }
 }
 
@@ -421,26 +430,27 @@ ul.sti li a:hover {
   justify-content: center;
   gap: 5%;
   margin-bottom: 2%;
-  p {
+  a {
     margin-bottom: 0%;
   }
 }
 
 #mail {
-  p {
-    margin-left: 3%;
+  a {
+    margin-left: 1.5%;
   }
   img {
-    margin-left: 26%;
+    margin-left: 13%;
   }
 }
 
+.nummer {
+  margin-right: 7%;
+}
+
 #telefon {
-  p {
-    margin-right: 5%;
-  }
   img {
-    margin-left: 1%;
+    margin-left: 4%;
   }
 }
 
@@ -707,6 +717,9 @@ ul.sti li a:hover {
     p {
       font-size: 1.3rem;
     }
+    a {
+      font-size: 1.3rem;
+    }
   }
   .gul_kasse_2 {
     background-color: var(--sjette-color);
@@ -818,6 +831,10 @@ ul.sti li a:hover {
   a {
     font-size: 1rem;
   }
+  /* linje DESKTOP */
+  .linje {
+    margin: 0 auto;
+  }
 
   /* KNAP DESKTOP */
   .knap {
@@ -836,6 +853,7 @@ ul.sti li a:hover {
   /************ INTRO TEKST START DESKTOP ************/
   section {
     padding: 5% 7% 0 7%;
+    margin: 0 auto;
   }
 
   .intro_tekst p {
@@ -853,14 +871,16 @@ ul.sti li a:hover {
   .viden {
     padding: 5% 7%;
     align-items: inherit;
+    margin: 0 auto;
   }
 
   /************ FÆRDIGHEDER 0G KOMPETENCER / UDFORDRINGER START DESKTOP ************/
   .kompetencer_udfordringer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 5% 7%;
+    padding: 5% 7%;
     gap: 2%;
+    margin: 0 auto;
   }
 
   .kompetencer {
@@ -868,7 +888,8 @@ ul.sti li a:hover {
   }
   /************ OPGAVER START DESKTOP ************/
   .opgaver {
-    margin: 5% 7%;
+    padding: 5% 7%;
+    margin: 0 auto;
   }
   .opgaver_overskrift_tekst p {
     font-size: 1.34rem;
@@ -945,6 +966,9 @@ ul.sti li a:hover {
     p {
       font-size: 1.35rem;
     }
+    a {
+      font-size: 1.35rem;
+    }
   }
 
   .gul_kasse_2 {
@@ -1013,6 +1037,28 @@ ul.sti li a:hover {
   }
 
   .sprog_tekst {
+    padding-inline: 0%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  section {
+    padding: 2% 0%;
+  }
+
+  .viden {
+    padding: 2% 0%;
+  }
+
+  .kompetencer_udfordringer {
+    padding: 2% 0%;
+  }
+
+  .opgaver {
+    padding: 2% 0%;
+  }
+  .linje {
+    padding-bottom: 2%;
     padding-inline: 0%;
   }
 }

@@ -9,12 +9,12 @@
   font-family: "josefin_semi_bold", sans-serif;
 }
 .logo img {
-  width: 21%;
+  width: 80px;
 }
 .head_menu a:hover,
 .menu_tema:hover {
-  color: var(--tredje-color);
-  transition: color 0.7s ease;
+  color: var(--fjerde-color);
+  transition: color 0.5s ease;
 }
 
 .head_menu a,
@@ -47,16 +47,16 @@
   padding: 8px;
   text-decoration: none;
   font-size: 2rem;
-  color: var(--secondary-color);
+  color: var(--sjette-color);
   display: block;
-  transition: 0.7s ease;
+  transition: 0.5s ease;
   max-width: none;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-  color: var(--tredje-color);
-  transition: 0.7s ease;
+  color: var(--fjerde-color);
+  transition: 0.5s ease;
 }
 
 .overlay .closebtn {
@@ -78,9 +78,24 @@
   font-family: "josefin_semi_bold", sans-serif;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
+  .head_menu a,
+  .menu_tema {
+    font-size: 1.5rem;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .head_menu a,
   .menu_tema {
     font-size: 1.7rem;
+  }
+
+  .logo img {
+    width: 100px;
   }
 }

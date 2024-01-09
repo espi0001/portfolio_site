@@ -52,11 +52,11 @@ h1 {
   }
 
   25% {
-    translate: 180% 0%;
+    translate: 174.5% 0%;
   }
 
   75% {
-    translate: 180% 0%;
+    translate: 174.5% 0%;
   }
 
   100% {
@@ -81,11 +81,11 @@ h1 {
 
 @keyframes navn_kf {
   0% {
-    translate: 180% 0%;
+    translate: 174.5% 0%;
   }
 
   15% {
-    translate: 180% 0%;
+    translate: 174.5% 0%;
   }
 
   40% {
@@ -98,14 +98,20 @@ h1 {
     translate: 0% 0%;
   }
   85% {
-    translate: 180% 0%;
+    translate: 174.5% 0%;
   }
   100% {
-    translate: 180% 0%;
+    translate: 174.5% 0%;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   h1 {
     font-size: 11rem;
   }
