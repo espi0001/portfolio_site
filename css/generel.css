@@ -34,27 +34,6 @@ main {
   margin: 0 auto;
 }
 
-footer {
-  background-color: var(--secondary-color);
-  color: var(--femte-color);
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.footer_navn p {
-  background-color: var(--secondary-color);
-  color: var(--femte-color);
-  max-width: none;
-}
-
-.footer_iconer {
-  display: inline-flex;
-  color: var(--femte-color);
-  gap: 14%;
-  margin-top: 2%;
-}
-
 /************ FONTE START ************/
 @font-face {
   font-family: "abril_extra_bold";
@@ -202,11 +181,10 @@ ul.sti li a:hover {
 
 /************ LINJE ************/
 .kassen_linje {
-  margin: 2% 0%;
+  padding: 5% 4%;
 }
 
 .linje {
-  /* margin: 4% 4%; */
   max-width: 1400px;
 }
 
@@ -363,10 +341,14 @@ ul.sti li a:hover {
 .opg_2_knap {
   text-align: center;
   align-self: center;
+  a {
+    font-family: "josefin_bold", sans-serif;
+  }
 }
 
 /************ OM MIG START ************/
 .om_mig {
+  max-width: 1400px;
   margin: 5% 4%;
   p {
     margin-bottom: 3%;
@@ -376,6 +358,8 @@ ul.sti li a:hover {
   }
 }
 .om_mig_grid {
+  max-width: 1400px;
+  margin: 0 auto;
   h3 {
     text-align: left;
     margin-bottom: 3%;
@@ -419,17 +403,21 @@ ul.sti li a:hover {
   }
   a {
     color: var(--fjerde-color);
+    text-decoration: none;
   }
   img {
     width: 58%;
   }
+}
+.kontakt a:hover {
+  text-decoration: underline;
 }
 
 .oplysninger {
   display: flex;
   justify-content: center;
   gap: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   a {
     margin-bottom: 0%;
   }
@@ -510,6 +498,24 @@ ul.sti li a:hover {
 }
 .kodning p {
   padding-top: 6%;
+}
+
+.kodning_iconer_tekst {
+  display: block;
+}
+
+.kodning_iconer {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  padding-top: 4%;
+  img {
+    width: 15%;
+  }
+  p {
+    padding-top: 0%;
+    margin-bottom: 0%;
+  }
 }
 
 /* SPROG */
@@ -596,16 +602,15 @@ ul.sti li a:hover {
   }
 
   /************ LINJE TABLET ************/
-  .linje {
-    padding-inline: 9%;
-    margin: 3% 4%;
+  .kassen_linje {
+    padding: 4% 5%;
   }
   /************ VIDEN START TABLET ************/
 
   .viden {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 5% 5%;
+    padding: 4% 5%;
     align-items: center;
   }
 
@@ -783,11 +788,17 @@ ul.sti li a:hover {
 
   .kodning {
     margin: 0 auto;
-    p {
+    /* p {
       padding-top: 28%;
-    }
+    } */
   }
 
+  .kodning_iconer {
+    padding-top: 7%;
+    img {
+      width: 26%;
+    }
+  }
   /* SPROG TABLET */
   .sprog {
     grid-column: 2/5;
@@ -831,7 +842,12 @@ ul.sti li a:hover {
   a {
     font-size: 1rem;
   }
+
   /* linje DESKTOP */
+  .kassen_linje {
+    padding: 4% 7%;
+  }
+
   .linje {
     margin: 0 auto;
   }
@@ -944,7 +960,8 @@ ul.sti li a:hover {
 
   /************ OM MIG START DESKTOP ************/
   .om_mig {
-    margin: 5% 7%;
+    margin: 0 auto;
+    padding: 5% 7%;
   }
 
   .om_mig_overskrift_billede {
@@ -1020,9 +1037,10 @@ ul.sti li a:hover {
     width: 77%;
   }
 
-  .kodning {
-    p {
-      padding-top: 24%;
+  .kodning_iconer {
+    padding-top: 7%;
+    img {
+      width: 31%;
     }
   }
   /* SPROG DESKTOP */
@@ -1057,8 +1075,12 @@ ul.sti li a:hover {
   .opgaver {
     padding: 2% 0%;
   }
-  .linje {
-    padding-bottom: 2%;
-    padding-inline: 0%;
+  .kassen_linje {
+    padding: 2% 7%;
+  }
+
+  .om_mig {
+    margin: 0 auto;
+    padding: 2% 0%;
   }
 }

@@ -78,6 +78,33 @@
   font-family: "josefin_semi_bold", sans-serif;
 }
 
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  p {
+    color: var(--femte-color);
+    max-width: none;
+  }
+}
+
+.footer_navn {
+  margin-bottom: 10px;
+}
+
+.kontakt_mig {
+  margin-bottom: 5px;
+}
+
+.footer_iconer {
+  display: grid;
+  color: var(--femte-color);
+  gap: 14%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 10%;
+}
+
 @media screen and (min-width: 650px) {
   .head_menu a,
   .menu_tema {
